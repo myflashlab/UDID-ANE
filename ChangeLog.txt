@@ -1,0 +1,4 @@
+Unique Device ID Air Native Extension (Android + iOS)
+
+*Apr 09, 2017 - V1.0.0*
+* beginning of the journey!
