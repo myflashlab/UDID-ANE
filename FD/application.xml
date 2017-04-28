@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <application xmlns="http://ns.adobe.com/air/application/25.0">
   <id>com.doitflash.udid</id>
-  <versionNumber>1.0.0</versionNumber>
+  <versionNumber>1.1.0</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
   <filename>exUDID</filename>
   <name>UDID</name>
@@ -30,6 +30,9 @@
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
 		</activity>
+
+		<!--Required if you want to use the Android Advert ID-->
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 		
 	</application>
 </manifest>]]></manifestAdditions>
@@ -100,6 +103,9 @@
 	
 	<!--Required if you are using TelephonyManager API-->
 	<extensionID>com.myflashlab.air.extensions.permissionCheck</extensionID>
+	
+	<!--Required if you want to use the Android Advert ID-->
+	<extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.basement</extensionID>
 	
   </extensions>
 </application>

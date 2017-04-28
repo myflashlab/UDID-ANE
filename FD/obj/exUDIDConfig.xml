@@ -16,7 +16,7 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'4/9/2017'</value>
+      <value>'4/24/2017'</value>
     </define>
     <define append="true">
       <name>CONFIG::air</name>
@@ -41,6 +41,7 @@
     <library-path append="true">
       <path-element>D:\ANEs\UDID\Vx.x.x\FD\lib\UDID.ane</path-element>
       <path-element>D:\ANEs\UDID\Vx.x.x\FD\lib\permissionCheck.ane</path-element>
+      <path-element>D:\ANEs\UDID\Vx.x.x\FD\lib\overrideAir.ane</path-element>
     </library-path>
   </compiler>
   <file-specs>

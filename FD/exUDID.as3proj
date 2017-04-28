@@ -59,6 +59,7 @@
     <element path="lib\googlePlayServices.ane" />
     <element path="lib\UDID.ane" />
     <element path="lib\permissionCheck.ane" />
+    <element path="lib\overrideAir.ane" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

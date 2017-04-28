@@ -29,6 +29,7 @@ package
 	
 	import com.myflashlab.air.extensions.udid.UDID;
 	import com.myflashlab.air.extensions.nativePermissions.PermissionCheck;
+	import com.myflashlab.air.extensions.dependency.OverrideAir;
 	
 	/**
 	 * ...
@@ -142,8 +143,20 @@ package
 			}
 		}
 		
+		private function myDebuggerDelegate($ane:String, $class:String, $msg:String):void
+		{
+			trace("------------------");
+			trace("$ane = " + $ane);
+			trace("$class = " + $class);
+			trace("$msg = " + $msg);
+			trace("------------------");
+		}
+		
 		private function init():void
 		{
+			// remove this line in production build or pass null as the delegate
+			OverrideAir.enableDebugger(myDebuggerDelegate);
+			
 			_permissions = new PermissionCheck();
 			
 			UDID.init();
@@ -228,6 +241,23 @@ package
 			function getVendorID(e:MouseEvent):void
 			{
 				C.log("getVendorID = " + UDID.vendorId);
+			}
+			
+			//----------------------------------------------------------------------
+			
+			var btn6:MySprite = createBtn("get AD ID");
+			btn6.addEventListener(MouseEvent.CLICK, getAdID);
+			_list.add(btn6);
+			
+			function getAdID(e:MouseEvent):void
+			{
+				UDID.retriveAdId(onResult);
+			}
+			
+			function onResult($id:String, $isLimitAdTrackingEnabled:Boolean):void
+			{
+				C.log("ad ID = " + $id);
+				C.log("isLimitAdTrackingEnabled = " + $isLimitAdTrackingEnabled);
 			}
 			
 			//----------------------------------------------------------------------

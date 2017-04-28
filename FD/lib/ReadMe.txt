@@ -2,6 +2,7 @@ This ANE is dependent on the following ANEs. You need to add these to your proje
 
 androidSupport.ane
 overrideAir.ane
+googlePlayServices_basement.ane
 
 Download from here: https://github.com/myflashlab/common-dependencies-ANE
 
