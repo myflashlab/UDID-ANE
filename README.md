@@ -1,4 +1,4 @@
-# Unique Device ID ANE V1.1.0 (Android+iOS)
+# Unique Device ID ANE V1.1.1 (Android+iOS)
 This ANE provides you with some properties which they return different Device Identifiers. You may use them in your apps to identify your users even if your users are uninstalling/re-installing your apps. Nevertheless, make sure to read [this blog](http://www.myflashlabs.com/get-adobe-air-unique-device-id/) to learn the differences between the ANE properties and use the one which best suits your app requirements.
 
 This ANE provides you with the following Identifiers:  
@@ -103,6 +103,9 @@ http://www.myflashlabs.com/product/unique-device-id-air-native-extension/
 [https://apsalar.com/2015/06/all-about-idfa/](https://apsalar.com/2015/06/all-about-idfa/)   
 
 # Changelog
+*Aug 15, 2017 - V1.1.1*
+* fixed a bug check on devices with no googlePlayServices
+
 *Apr 26, 2017 - V1.1.0*
 * Added support for Apple/Android Advertising ID.
 * the ANE is now also dependent on [googlePlayServices_basement.ane](https://github.com/myflashlab/common-dependencies-ANE). ```<extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.basement</extensionID>```

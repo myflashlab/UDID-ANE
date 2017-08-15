@@ -1,5 +1,9 @@
 Unique Device ID Air Native Extension (Android + iOS)
 
+*Aug 15, 2017 - V1.1.1*
+* fixed a bug check on devices with no googlePlayServices
+* added intelliJ demo project
+
 *Apr 26, 2017 - V1.1.0*
 * Added support for Apple/Android Advertising ID.
 * the ANE is now also dependent on [googlePlayServices_basement.ane](https://github.com/myflashlab/common-dependencies-ANE). ```<extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.basement</extensionID>```
