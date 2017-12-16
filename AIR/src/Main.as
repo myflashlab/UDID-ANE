@@ -145,11 +145,7 @@ package
 		
 		private function myDebuggerDelegate($ane:String, $class:String, $msg:String):void
 		{
-			trace("------------------");
-			trace("$ane = " + $ane);
-			trace("$class = " + $class);
-			trace("$msg = " + $msg);
-			trace("------------------");
+			trace($ane+"("+$class+") "+$msg);
 		}
 		
 		private function init():void

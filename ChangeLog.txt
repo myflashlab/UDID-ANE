@@ -1,5 +1,8 @@
 Unique Device ID Air Native Extension (Android + iOS)
 
+*Dec 15, 2017 - V1.1.3*
+* optimized for [ANE-LAB sofwate](https://github.com/myflashlab/ANE-LAB).
+
 *Aug 15, 2017 - V1.1.1*
 * fixed a bug check on devices with no googlePlayServices
 * added intelliJ demo project

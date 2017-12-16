@@ -1,4 +1,4 @@
-# Unique Device ID ANE V1.1.1 (Android+iOS)
+# Unique Device ID ANE V1.1.3 (Android+iOS)
 This ANE provides you with some properties which they return different Device Identifiers. You may use them in your apps to identify your users even if your users are uninstalling/re-installing your apps. Nevertheless, make sure to read [this blog](http://www.myflashlabs.com/get-adobe-air-unique-device-id/) to learn the differences between the ANE properties and use the one which best suits your app requirements.
 
 This ANE provides you with the following Identifiers:  
@@ -13,14 +13,10 @@ This ANE provides you with the following Identifiers:
 # asdoc
 [find the latest asdoc for this ANE here.](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/udid/UDID.html)
 
-# Demo .apk
-you may like to see the ANE in action? [Download demo .apk](https://github.com/myflashlab/UDID-ANE/tree/master/FD/dist)
-
-**NOTICE**: the demo ANE works only after you hit the "OK" button in the dialog which opens. in your tests make sure that you are NOT calling other ANE methods prior to hitting the "OK" button.
-[Download the ANE](https://github.com/myflashlab/UDID-ANE/tree/master/FD/lib)
+[Download demo ANE](https://github.com/myflashlab/UDID-ANE/tree/master/AIR/lib)
 
 # AIR Usage
-For the complete AS3 code usage, see the [demo project here](https://github.com/myflashlab/UDID-ANE/blob/master/FD/src/Main.as).
+For the complete AS3 code usage, see the [demo project here](https://github.com/myflashlab/UDID-ANE/blob/master/AIR/src/Main.as).
 
 ```actionscript
 import com.myflashlab.air.extensions.udid.UDID;
@@ -103,6 +99,9 @@ http://www.myflashlabs.com/product/unique-device-id-air-native-extension/
 [https://apsalar.com/2015/06/all-about-idfa/](https://apsalar.com/2015/06/all-about-idfa/)   
 
 # Changelog
+*Aug 15, 2017 - V1.1.3*
+* optimized for [ANE-LAB sofwate](https://github.com/myflashlab/ANE-LAB).
+
 *Aug 15, 2017 - V1.1.1*
 * fixed a bug check on devices with no googlePlayServices
 
