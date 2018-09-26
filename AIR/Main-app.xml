@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/27.0">
+<application xmlns="http://ns.adobe.com/air/application/30.0">
   <id>com.doitflash.udid</id>
-  <versionNumber>1.1.3</versionNumber>
+  <versionNumber>1.1.4</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
   <filename>exUDID</filename>
   <name>UDID</name>
@@ -9,9 +9,8 @@
     <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
 	
 	<uses-permission android:name="android.permission.INTERNET" />
-		
-	<!--The new Permission thing on Android works ONLY if you are targetting Android SDK 23 or higher-->
-	<uses-sdk android:targetSdkVersion="23"/>
+
+	<uses-sdk android:targetSdkVersion="26"/>
 	<uses-sdk android:minSdkVersion="15"/>
 	
 	<!--Required if you are using TelephonyManager API-->
@@ -109,15 +108,19 @@
 	
 	<extensionID>com.myflashlab.air.extensions.udid</extensionID>
 	
-	<!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
-	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport</extensionID>
+	<!-- dependency ANEs https://github.com/myflashlab/common-dependencies-ANE -->
+	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport.arch</extensionID>
+	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport.core</extensionID>
+	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport.v4</extensionID>
+    <extensionID>com.myflashlab.air.extensions.dependency.androidSupport.customtabs</extensionID>
+    <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.basement</extensionID>
+    <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.ads</extensionID>
+    <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.ads.lite</extensionID>
+    <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.gass</extensionID>
     <extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
 	
 	<!--Required if you are using TelephonyManager API-->
 	<extensionID>com.myflashlab.air.extensions.permissionCheck</extensionID>
-	
-	<!--Required if you want to use the Android Advert ID-->
-	<extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.basement</extensionID>
 	
   </extensions>
 </application>

@@ -1,5 +1,16 @@
 Unique Device ID Air Native Extension (Android + iOS)
 
+*Sep 23, 2018 - V1.1.4*
+* Removed androidSupport dependency and added the following:
+    * androidSupport-arch.ane
+    * androidSupport-core.ane
+    * androidSupport-customtabs.ane
+    * androidSupport-v4.ane
+    * googlePlayServices_ads.anev
+    * googlePlayServices_adsLite.ane
+    * googlePlayServices_basement.ane
+    * googlePlayServices_gass.ane
+
 *Dec 15, 2017 - V1.1.3*
 * optimized for [ANE-LAB sofwate](https://github.com/myflashlab/ANE-LAB).
 
