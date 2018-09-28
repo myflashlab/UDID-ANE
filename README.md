@@ -76,7 +76,7 @@ Below are the list of Permissions this ANE might require. Check out the demo pro
 
 Necessary | Optional
 --------------------------- | ---------------------------
-- | [SOURCE_PHONE](https://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/nativePermissions/PermissionCheck.html#SOURCE_PHONE)
+ - | [SOURCE_PHONE](https://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/nativePermissions/PermissionCheck.html#SOURCE_PHONE)
 
 # Commercial Version
 http://www.myflashlabs.com/product/unique-device-id-air-native-extension/
