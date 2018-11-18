@@ -1,4 +1,4 @@
-# Unique Device ID ANE V1.1.4 (Android+iOS)
+# Unique Device ID ANE V1.1.5 (Android+iOS)
 This ANE provides you with some properties which they return different Device Identifiers. You may use them in your apps to identify your users even if your users are uninstalling/re-installing your apps. Nevertheless, make sure to read [this blog](http://www.myflashlabs.com/get-adobe-air-unique-device-id/) to learn the differences between the ANE properties and use the one which best suits your app requirements.
 
 This ANE provides you with the following Identifiers:  
@@ -90,6 +90,10 @@ http://www.myflashlabs.com/product/unique-device-id-air-native-extension/
 [https://apsalar.com/2015/06/all-about-idfa/](https://apsalar.com/2015/06/all-about-idfa/)   
 
 # Changelog
+*Nov 18, 2018 - V1.1.5*
+* Works with OverrideAir ANE V5.6.1 or higher
+* Works with ANELAB V1.1.26 or higher
+
 *Sep 23, 2018 - V1.1.4*
 * Removed androidSupport dependency and added the following:
     * androidSupport-arch.ane
