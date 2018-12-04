@@ -79,9 +79,9 @@ Necessary | Optional
 . | [SOURCE_PHONE](https://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/nativePermissions/PermissionCheck.html#SOURCE_PHONE)
 
 # Commercial Version
-http://www.myflashlabs.com/product/unique-device-id-air-native-extension/
+https://www.myflashlabs.com/product/unique-device-id-air-native-extension/
 
-![UDID ANE](https://www.myflashlabs.com/wp-content/uploads/2017/04/product_adobe-air-ane-extension-udid-595x738.jpg)
+[![UDID ANE](https://www.myflashlabs.com/wp-content/uploads/2017/04/product_adobe-air-ane-extension-udid-2018-595x738.jpg)](https://www.myflashlabs.com/product/unique-device-id-air-native-extension/)
 
 # Tutorials
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O) 
