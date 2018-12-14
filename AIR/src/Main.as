@@ -37,8 +37,6 @@ package
 	 */
 	public class Main extends Sprite 
 	{
-		private var _permissions:PermissionCheck;
-		
 		private const BTN_WIDTH:Number = 150;
 		private const BTN_HEIGHT:Number = 60;
 		private const BTN_SPACE:Number = 2;
@@ -143,17 +141,13 @@ package
 			}
 		}
 		
-		private function myDebuggerDelegate($ane:String, $class:String, $msg:String):void
-		{
-			trace($ane+"("+$class+") "+$msg);
-		}
-		
 		private function init():void
 		{
-			// remove this line in production build or pass null as the delegate
-			OverrideAir.enableDebugger(myDebuggerDelegate);
-			
-			_permissions = new PermissionCheck();
+			// Remove OverrideAir debugger in production builds
+			OverrideAir.enableDebugger(function ($ane:String, $class:String, $msg:String):void
+			{
+				trace($ane+" ("+$class+") "+$msg);
+			});
 			
 			UDID.init();
 			
@@ -161,23 +155,23 @@ package
 			
 			var btn0:MySprite = createBtn("Telephony Manager");
 			btn0.addEventListener(MouseEvent.CLICK, initTelephonyManager);
-			if(UDID.OS == UDID.ANDROID) _list.add(btn0);
+			if(OverrideAir.os == OverrideAir.ANDROID) _list.add(btn0);
 			
 			function initTelephonyManager(e:MouseEvent):void
 			{
-				if (_permissions.check(PermissionCheck.SOURCE_PHONE) == PermissionCheck.PERMISSION_GRANTED)
+				if (PermissionCheck.check(PermissionCheck.SOURCE_PHONE) == PermissionCheck.PERMISSION_GRANTED)
 				{
 					doInitTelephonyManager();
 				}
 				else
 				{
-					_permissions.request(PermissionCheck.SOURCE_PHONE, onRequestResult);
+					PermissionCheck.request(PermissionCheck.SOURCE_PHONE, onRequestResult);
 				}
 			}
 			
-			function onRequestResult($state:int):void
+			function onRequestResult($obj:Object):void
 			{
-				if ($state == PermissionCheck.PERMISSION_GRANTED)
+				if ($obj.state == PermissionCheck.PERMISSION_GRANTED)
 				{
 					doInitTelephonyManager();
 				}
@@ -199,7 +193,7 @@ package
 			
 			var btn2:MySprite = createBtn("get Serial Number");
 			btn2.addEventListener(MouseEvent.CLICK, getSerialNumber);
-			if(UDID.OS == UDID.ANDROID) _list.add(btn2);
+			if(OverrideAir.os == OverrideAir.ANDROID) _list.add(btn2);
 			
 			function getSerialNumber(e:MouseEvent):void
 			{
@@ -210,7 +204,7 @@ package
 			
 			var btn3:MySprite = createBtn("get Android ID");
 			btn3.addEventListener(MouseEvent.CLICK, getAndroidId);
-			if(UDID.OS == UDID.ANDROID) _list.add(btn3);
+			if(OverrideAir.os == OverrideAir.ANDROID) _list.add(btn3);
 			
 			function getAndroidId(e:MouseEvent):void
 			{
@@ -221,7 +215,7 @@ package
 			
 			var btn4:MySprite = createBtn("get UUID");
 			btn4.addEventListener(MouseEvent.CLICK, getUUID);
-			if(UDID.OS == UDID.ANDROID) _list.add(btn4);
+			if(OverrideAir.os == OverrideAir.ANDROID) _list.add(btn4);
 			
 			function getUUID(e:MouseEvent):void
 			{
@@ -232,7 +226,7 @@ package
 			
 			var btn5:MySprite = createBtn("get vendor ID");
 			btn5.addEventListener(MouseEvent.CLICK, getVendorID);
-			if(UDID.OS == UDID.IOS) _list.add(btn5);
+			if(OverrideAir.os == OverrideAir.IOS) _list.add(btn5);
 			
 			function getVendorID(e:MouseEvent):void
 			{
