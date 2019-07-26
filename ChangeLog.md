@@ -1,5 +1,11 @@
 Unique Device ID Air Native Extension (Android + iOS)
 
+*Jul 26, 2019 - V1.1.51*
+* Works with iOS 10+
+* Support Android 64-bit
+* Fixed a bug when ```UDID.serialNumber``` returned *unknown* when Android targetSdkVersion was set to 28. 
+* before calling ```UDID.serialNumber``` user must have accepted the ```PermissionCheck.SOURCE_PHONE``` permission.
+
 *Nov 18, 2018 - V1.1.5*
 * Works with OverrideAir ANE V5.6.1 or higher
 * Works with ANELAB V1.1.26 or higher

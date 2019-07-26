@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/31.0">
+<application xmlns="http://ns.adobe.com/air/application/32.0">
   <id>com.doitflash.udid</id>
-  <versionNumber>1.1.5</versionNumber>
+  <versionNumber>1.1.51</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
   <filename>exUDID</filename>
   <name>UDID</name>
@@ -10,10 +10,10 @@
 	
 	<uses-permission android:name="android.permission.INTERNET" />
 
-	<uses-sdk android:targetSdkVersion="26"/>
+	<uses-sdk android:targetSdkVersion="28"/>
 	<uses-sdk android:minSdkVersion="15"/>
 	
-	<!--Required if you are using TelephonyManager API-->
+	<!-- Required if you are using TelephonyManager API or UDID.serialNumber -->
 	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 	
 	<application>
@@ -43,9 +43,9 @@
 	  
 	 <InfoAdditions><![CDATA[
 	
-		<!--iOS 8.0 or higher can support this ANE-->
+		<!--iOS 10.0 or higher can support this ANE-->
 		<key>MinimumOSVersion</key>
-		<string>8.0</string>
+		<string>10.0</string>
 		 
 		<key>UIPrerenderedIcon</key>
 		<true/>

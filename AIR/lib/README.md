@@ -1,6 +1,6 @@
 Copy the purchased [UDID.ane](https://www.myflashlabs.com/product/unique-device-id-air-native-extension/) here along with the following dependency ANEs:
 
-1. (If using Telephony Manager feature) permissionCheck.ane - [Download from here](https://github.com/myflashlab/PermissionCheck-ANE/)
+1. (If using Telephony Manager feature or "UDID.serialNumber") permissionCheck.ane - [Download from here](https://github.com/myflashlab/PermissionCheck-ANE/)
 1. androidSupport-arch.ane
 1. androidSupport-core.ane
 1. androidSupport-customtabs.ane

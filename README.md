@@ -29,11 +29,10 @@ else if(UDID.OS == UDID.IOS) trace(UDID.vendorId);
 <!--
 FOR ANDROID:
 -->
-		<!--The new Permission thing on Android works ONLY if you are targetting Android SDK 23 or higher-->
-		<uses-sdk android:targetSdkVersion="26"/>
+		<uses-sdk android:targetSdkVersion="28"/>
 		<uses-sdk android:minSdkVersion="15"/>
 		
-		<!--Required if you are using TelephonyManager API-->
+		<!--Required if you are using TelephonyManager API or UDID.serialNumber -->
 		<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 		
 		<!--Required if you want to use the Android Advert ID-->
@@ -65,7 +64,7 @@ Embedding the ANE:
 
 # Requirements
 * Android SDK 15+
-* iOS 8.0+
+* iOS 10.0+
 * AIR SDK 30+
 
 # Permissions

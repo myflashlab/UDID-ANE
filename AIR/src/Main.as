@@ -187,16 +187,8 @@ package
 				
 				C.log("telephonyManagerDeviceId = " + UDID.telephonyManagerDeviceId);
 				C.log("telephonyManagerSubscriberId = " + UDID.telephonyManagerSubscriberId);
-			}
-			
-			//----------------------------------------------------------------------
-			
-			var btn2:MySprite = createBtn("get Serial Number");
-			btn2.addEventListener(MouseEvent.CLICK, getSerialNumber);
-			if(OverrideAir.os == OverrideAir.ANDROID) _list.add(btn2);
-			
-			function getSerialNumber(e:MouseEvent):void
-			{
+				
+				// since Android targetSdkVersion 28, you must have 'PermissionCheck.SOURCE_PHONE' first
 				C.log("getSerialNumber = " + UDID.serialNumber);
 			}
 			
