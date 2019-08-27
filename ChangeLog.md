@@ -1,5 +1,8 @@
 Unique Device ID Air Native Extension (Android + iOS)
 
+*Aug 24, 2019 - V1.1.52*
+* minor improvments.
+
 *Jul 26, 2019 - V1.1.51*
 * Works with iOS 10+
 * Support Android 64-bit
