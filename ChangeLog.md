@@ -3,7 +3,7 @@ Unique Device ID Air Native Extension (Android + iOS)
 *Mar 14, 2020 - V2.0.2*
 - minor improvments.
 
-*Feb 05, 2020 - V2.0.2*
+*Feb 05, 2020 - V2.0.1*
 - minor improvments.
 
 *Dec 31, 2019 - V2.0.0*
