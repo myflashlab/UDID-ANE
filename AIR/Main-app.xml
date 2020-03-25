@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <application xmlns="http://ns.adobe.com/air/application/32.0">
   <id>com.doitflash.udid</id>
-  <versionNumber>1.1.52</versionNumber>
+  <versionNumber>2.0.4</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
   <filename>exUDID</filename>
   <name>UDID</name>
@@ -46,10 +46,10 @@
 		<!--iOS 10.0 or higher can support this ANE-->
 		<key>MinimumOSVersion</key>
 		<string>10.0</string>
-		 
-    <key>UILaunchStoryboardName</key>
-    <string>LaunchScreen</string>
 
+		<key>UILaunchStoryboardName</key>
+		<string>LaunchScreen</string>
+		 
 		<key>UIPrerenderedIcon</key>
 		<true/>
 			
@@ -98,10 +98,10 @@
 	<extensionID>com.myflashlab.air.extensions.udid</extensionID>
 	
 	<!-- dependency ANEs https://github.com/myflashlab/common-dependencies-ANE -->
-	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport.arch</extensionID>
-	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport.core</extensionID>
-	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport.v4</extensionID>
-    <extensionID>com.myflashlab.air.extensions.dependency.androidSupport.customtabs</extensionID>
+	<extensionID>com.myflashlab.air.extensions.dependency.androidx.arch</extensionID>
+	<extensionID>com.myflashlab.air.extensions.dependency.androidx.core</extensionID>
+    <extensionID>com.myflashlab.air.extensions.dependency.androidx.design</extensionID>
+    <extensionID>com.myflashlab.air.extensions.dependency.androidx.lifecycle</extensionID>
     <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.basement</extensionID>
     <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.ads</extensionID>
     <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.ads.lite</extensionID>
