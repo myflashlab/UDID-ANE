@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <application xmlns="http://ns.adobe.com/air/application/32.0">
   <id>com.doitflash.udid</id>
-  <versionNumber>2.0.4</versionNumber>
+  <versionNumber>2.0.2</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
   <filename>exUDID</filename>
   <name>UDID</name>

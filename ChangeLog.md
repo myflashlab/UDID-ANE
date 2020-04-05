@@ -1,13 +1,7 @@
 Unique Device ID Air Native Extension (Android + iOS)
 
-*Mar 14, 2020 - V2.0.2*
-- minor improvments.
-
-*Feb 05, 2020 - V2.0.1*
-- minor improvments.
-
-*Dec 31, 2019 - V2.0.0*
-- Add androidx dependencies instead of android support libraries
+*Apr 05, 2020 - V2.0.2*
+- Added androidx dependencies instead of android support libraries
 
 *Aug 24, 2019 - V1.1.52*
 - minor improvments.

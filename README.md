@@ -30,7 +30,7 @@ else if(UDID.OS == UDID.IOS) trace(UDID.vendorId);
 FOR ANDROID:
 -->
 		<uses-sdk android:targetSdkVersion="28"/>
-		<uses-sdk android:minSdkVersion="15"/>
+		<uses-sdk android:minSdkVersion="19"/>
 		
 		<!--Required if you are using TelephonyManager API or UDID.serialNumber -->
 		<uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -47,10 +47,10 @@ Embedding the ANE:
 	<extensionID>com.myflashlab.air.extensions.udid</extensionID>
 	
 	<!-- dependency ANEs https://github.com/myflashlab/common-dependencies-ANE -->
-	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport.arch</extensionID>
-	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport.core</extensionID>
-	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport.v4</extensionID>
-    <extensionID>com.myflashlab.air.extensions.dependency.androidSupport.customtabs</extensionID>
+	<extensionID>com.myflashlab.air.extensions.dependency.androidx.arch</extensionID>
+	<extensionID>com.myflashlab.air.extensions.dependency.androidx.core</extensionID>
+    <extensionID>com.myflashlab.air.extensions.dependency.androidx.design</extensionID>
+    <extensionID>com.myflashlab.air.extensions.dependency.androidx.lifecycle</extensionID>
     <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.basement</extensionID>
     <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.ads</extensionID>
     <extensionID>com.myflashlab.air.extensions.dependency.googlePlayServices.ads.lite</extensionID>
@@ -63,9 +63,9 @@ Embedding the ANE:
 ```
 
 # Requirements
-* Android SDK 15+
+* Android SDK 19+
 * iOS 10.0+
-* AIR SDK 30+
+* AIR SDK 33+
 
 # Permissions
 Below are the list of Permissions this ANE might require. Check out the demo project available at this repository to see how we have used the [PermissionCheck ANE](http://www.myflashlabs.com/product/native-access-permission-check-settings-menu-air-native-extension/) to ask for the permissions.
